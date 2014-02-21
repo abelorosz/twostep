@@ -1,4 +1,4 @@
-# Intervention Image
+# Twostep verifictaion
 
 Twostep is a **PHP version of Google's two-step authentication** library. The package includes ServiceProviders and Facades for easy **Laravel 4** integration.
 
