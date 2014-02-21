@@ -1,10 +1,14 @@
 {
     "name": "abelorosz/twostep",
-    "description": "",
+    "description": "Two-step verification library with support for Laravel 4 integration",
+    "homepage": "https://abelorosz.github.io/twostep/",
+    "keywords": ["laravel", "twostep", "verification"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Abel Orosz",
-            "email": "abel.orosz@me.com"
+            "email": "abel.orosz@me.com",
+            "homepage": "http://abelorosz.com/"
         }
     ],
     "require": {
