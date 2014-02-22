@@ -17,7 +17,7 @@ Twostep is a **PHP version of Google's two-step authentication** library. The pa
 
 ## Installation
 
-The best way to install Intervention Image is quickly and easily with [Composer](http://getcomposer.org).
+The best way to install Twostep is quickly and easily with [Composer](http://getcomposer.org).
 
 Twostep is available via [Packagist](https://packagist.org/packages/abelorosz/twostep).
 
