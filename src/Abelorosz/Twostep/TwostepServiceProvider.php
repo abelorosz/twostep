@@ -1,4 +1,6 @@
-<?php namespace Abelorosz\Twostep;
+<?php 
+
+namespace Abelorosz\Twostep;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -9,7 +11,7 @@ class TwostepServiceProvider extends ServiceProvider {
 	 *
 	 * @var bool
 	 */
-	protected $defer = true;
+	protected $defer = false;
 
 	/**
 	 * Bootstrap the application events.
@@ -28,7 +30,11 @@ class TwostepServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+		$this->app["twostep"] = $this->app->share(
+			function($app) {
+				return new Twostep;
+			}
+		);
 	}
 
 	/**
@@ -38,7 +44,7 @@ class TwostepServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array();
+		return array("twostep");
 	}
 
 }

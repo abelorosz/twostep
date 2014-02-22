@@ -1,0 +1,11 @@
+{
+	"providers": [
+		"Abelorosz\Twostep\TwostepServiceProvider"
+	],
+	"aliases": [
+		{
+			"alias": "Twostep",
+			"facade": "Abelorosz\Twostep\Facades\Twostep"
+		}
+	]
+}
