@@ -6,7 +6,7 @@ Twostep is a **PHP version of Google's two-step authentication** library. The pa
 
 ## Requirements
     
-- PHP >=5.3
+- PHP >= 5.4
 
 ## Usage
 
