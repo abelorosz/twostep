@@ -18,11 +18,14 @@ class Twostep {
      *
      * @param 	int $code
      * @param 	string $secret
+     * @param 	timestamp $time
      * @return 	bool
      */
-    public function checkCode( $code, $secret )
+    public function checkCode( $code, $secret, $time = null  )
     {
-        $time = floor(time() / 30);
+        if (!$time)
+            $time = floor(time() / 30);
+
         for ( $i = -1; $i <= 1; $i++ )
             if ($this->getCode($secret,$time + $i) == $code)
                 return true;
